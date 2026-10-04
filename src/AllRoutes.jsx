@@ -4,6 +4,7 @@ import Home from './Pages/Home'
 import Navbar from './Components/Navbar'
 import Menu from './Pages/Menu'
 import Cart from './Pages/Cart'
+import CheckOut from './Pages/CheckOut'
 const AllRoutes = () => {
   return (
     <div>
@@ -13,6 +14,7 @@ const AllRoutes = () => {
             <Route path='/' element={<Home/>}></Route>
             <Route path='/menu' element={<Menu/>}></Route>
             <Route path='/cart' element={<Cart/>}></Route>
+            <Route path='/checkOut' element={<CheckOut/>}></Route>
         </Routes>
         </BrowserRouter>
     </div>
