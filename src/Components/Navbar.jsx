@@ -6,6 +6,7 @@ const Navbar = () => {
     <nav>
      <h2>Food Ordering App</h2>
      <NavLink to='/'>Home</NavLink>
+     <NavLink to='/menu'>Menu</NavLink>
     </nav>
   )
 }
