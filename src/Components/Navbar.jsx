@@ -7,6 +7,7 @@ const Navbar = () => {
      <h2>Food Ordering App</h2>
      <NavLink to='/'>Home</NavLink>
      <NavLink to='/menu'>Menu</NavLink>
+     <NavLink to='/cart'>Cart</NavLink>
     </nav>
   )
 }
