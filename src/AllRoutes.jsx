@@ -15,7 +15,8 @@ const AllRoutes = () => {
             <Route path='/' element={<Home/>}></Route>
             <Route path='/menu' element={<Menu cart={cart} setCart={setCart}/>}></Route>
             <Route path='/cart' element={<Cart cart={cart}/>}></Route>
-            <Route path='/checkOut' element={<CheckOut/>}></Route>
+            <Route path='/checkOut' element={<CheckOut cart={cart} setCart={setCart}/>}
+/>
         </Routes>
         </BrowserRouter>
     </div>
