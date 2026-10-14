@@ -1,0 +1,9 @@
+.usercard {
+    height: 50px;
+    color: rgb(255, 0, 123);
+    text-align: center;
+}
+.logout button{
+    background-color: blueviolet;
+    padding: 10px 20px;
+}

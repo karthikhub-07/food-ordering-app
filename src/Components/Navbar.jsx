@@ -1,14 +1,17 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 
-const Navbar = () => {
+const Navbar = ({ cart }) => {
   return (
-    <nav>
-     <h2>Food Ordering App</h2>
-     <NavLink to='/'>Home</NavLink>
-     <NavLink to='/menu'>Menu</NavLink>
-     <NavLink to='/cart'>Cart</NavLink>
-     <NavLink to='/checkOut'>CheckOut</NavLink>
+    <nav className="navbar">
+      <h2>Foodies</h2>
+
+      <div className="nav-links">
+        <NavLink to="/">Home</NavLink>
+        <NavLink to="/menu">Menu</NavLink>
+        <NavLink to="/cart">Cart ({cart ? cart.length : 0})</NavLink>
+        <NavLink to="/checkOut">CheckOut</NavLink>
+      </div>
     </nav>
   )
 }

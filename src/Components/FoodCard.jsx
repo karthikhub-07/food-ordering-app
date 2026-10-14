@@ -1,12 +1,17 @@
 import React from 'react'
 
-const FoodCard = (props) => {
+const FoodCard = ({ name, price, image, addToCart }) => {
   return (
-    <div>
-        <h3>food cart..</h3>
-        <p>{props.name}</p>
-        <p>₹{props.price}</p>
-        <img src={props.image} width="200" />
+    <div className="food-card">
+      <img src={image} alt={name} width="200" />
+
+      <h3>{name}</h3>
+
+      <p>Price: ₹{price}</p>
+
+      <button onClick={addToCart}>
+        Add to Cart
+      </button>
     </div>
   )
 }
